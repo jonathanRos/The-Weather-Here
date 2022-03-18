@@ -1,0 +1,22 @@
+{
+  "name": "api_calls_from_node",
+  "version": "1.0.0",
+  "description": "This is the Weather app by Joey Lee.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "server API",
+    "weather"
+  ],
+  "author": "Jonathan Rosenblitt",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.7"
+  }
+}

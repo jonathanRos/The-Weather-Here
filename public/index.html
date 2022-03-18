@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/API/Navigator? -->
+    <!-- https://www.youtube.com/watch?v=ZtLVbJk7KcM&list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X&index=17 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""
+    />
+    <script 
+        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+    <style>
+        #checkinMap { 
+            height: 500px; 
+            margin: 8px 0px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>The Weather Here</title>
+</head>
+<body>
+    <h1>The Weather Here</h1>
+    <div><a href="/">check in</a> | <a href="/checkins">view checkins</a></div>
+
+    <!-- <p><span id="latitude"></span>&deg;,<span id="longitude"></span>&deg;.</p> -->
+    <p>
+        The weather here at latitude <span id="latitude"></span>&deg;, 
+        longitude <span id="longitude"></span>&deg; is <span id="summary"></span> with a temperature of 
+        <span id="temperature"></span>&deg; F. The concentration of particulate 
+        matter (<span id="aq_parameter"></span>) is <span id="aq_value"></span> <span id="aq_units"></span> 
+        last read on <span id="aq_date"></span>.
+    </p>
+
+    <div id = "checkinMap"></div>
+
+    <!-- <button id="checkin">check in</button> -->
+    <script src="logs.js"></script>
+ 
+</body>
+</html>
